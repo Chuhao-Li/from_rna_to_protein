@@ -64,6 +64,6 @@ OLC算法：
 
 # Step 4: 氨基酸折叠
 
-打开上一步生成的`translated.txt`文件，把其中的氨基酸序列复制到[colabfold网站](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb){target=_blank}，点击“运行全部”。模拟折叠该氨基酸序列大概需要7分钟。
+打开上一步生成的`translated.txt`文件，把其中的氨基酸序列复制到<a href="https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/AlphaFold2.ipynb" target="_blank">colabfold网站</a>，点击“运行全部”。模拟折叠该氨基酸序列大概需要7分钟。
 
-运行完毕后，会自动下载一个压缩包，打开该压缩包，可以看到5个以".pdb"结尾的文件。把该文件提交到[蛋白三维结构查看网站](https://www.rcsb.org/3d-view){target=_blank}，可以查看该氨基酸的三维结构。
+运行完毕后，会自动下载一个压缩包，打开该压缩包，可以看到5个以".pdb"结尾的文件。把该文件提交到<a href="https://www.rcsb.org/3d-view" target="_blank">蛋白三维结构查看网站</a>，可以查看该氨基酸的三维结构。
