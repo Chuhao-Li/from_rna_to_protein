@@ -1,4 +1,4 @@
-# 请调整代码块的顺序，使程序正确运行。
+# 这里是正确的代码块顺序：A-C-E-D-B
 
 
 #####################Code block A: 读取传入参数。########################
@@ -10,16 +10,6 @@ if len(sys.argv) == 2:
     min_overlap = int(sys.argv[1])
 print("min_overlap被设置为：", min_overlap)
 #####################Code block A: 读取传入参数。########################
-
-
-
-#####################Code block B: 输出结果。########################
-# 代码注释：把得到的结果输出到文件。
-with open("02_OLC_assembly.txt", "w") as f:
-    print(">HBB_rna\n" + reads[0], file=f)
-
-print("\n运行完毕！请检查'02_OLC_assembly.txt'文件。")
-#####################Code block B: 输出结果。########################
 
 
 
@@ -50,6 +40,13 @@ def merge_contig(a, b, min_overlap=25):
 
 
 
+#####################Code block E: 读取reads。########################
+# 代码注释：读取所有生成的reads。
+reads = open("01_output_reads.txt").read().splitlines()
+#####################Code block E: 读取reads。########################
+
+
+
 #####################Code block D: 执行拼接。########################
 # 代码注释：对reads进行两两比较，如果有重叠，就合并在一起，直到只剩下
 # 一条read，或者reads的数目不再变化。
@@ -75,8 +72,11 @@ while len(reads) > 1:
 
 
 
-#####################Code block E: 读取reads。########################
-# 代码注释：读取所有生成的reads。
-reads = open("01_output_reads.txt").read().splitlines()
-#####################Code block E: 读取reads。########################
+#####################Code block B: 输出结果。########################
+# 代码注释：把得到的结果输出到文件。
+with open("02_OLC_assembly.txt", "w") as f:
+    print(">HBB_rna\n" + reads[0], file=f)
+
+print("\n运行完毕！请检查'02_OLC_assembly.txt'文件。")
+#####################Code block B: 输出结果。########################
 
